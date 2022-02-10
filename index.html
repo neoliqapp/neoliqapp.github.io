@@ -1,142 +1,32 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="styles.css">
-  <script src="scripts.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <title>PPLHN</title>
 </head>
 <body>
   <header>
     <div class="top-navigation">
-      <h1>Neoliq</h1>
+      <h1>Listados de personal de primera línea</h1>
     </div>
   </header>
   <main>
-    <p class="note">Calculadora de formulaciones parciales de Nutrición Parenteral Neonatal.</p>
-    <section class="age">
-      <div class="title-bar">
-        <div class="title-bar-bg"></div>
-        <p class="title-bar-text"><b>Edad del neonato</b></p>
-      </div>
-      <div class="component-container">
-        <p class="days">Ca</p>
-        <p class="days">Mg</p>
-        <p class="days">Na</p>
-        <p class="days">K</p>
-      </div>
-      <div id="button-container" class="component-container">
-        <button id="calcium"><b>1° día</b></button>
-        <button id="magnesium"><b>2° día</b></button>
-        <button id="sodium"><b>3° día</b></button>
-        <button id="potassium"><b>4°+ día</b></button>
-      </div>
-    </section>
-    <section class="general">
-      <div class="title-bar">
-        <div class="title-bar-bg"></div>
-        <p class="title-bar-text"><b>Datos generales</b></p>
-      </div>
-      <div>
-        <div class="weight-container">
-          <div class="label-container">
-            <label><b>Peso</b></label>
-            <label class="sub-label">(kilogramos)</label>
-          </div>
-          <input type="text" inputmode="numeric">
-        </div>
-        <hr>
-        <div class="fluid-intake-container">
-          <div class="label-container">
-            <label><b>Aporte de líquido</b></label>
-            <label class="sub-label">(mL/kg/día)</label>
-          </div>
-          <input type="text" inputmode="numeric">
-        </div>
-      </div>
-    </section>
-    <section class="components">
-      <div class="title-bar">
-      <div class="title-bar-bg"></div>
-      <p class="title-bar-text"><b>Componentes</b></p>
-    </div>
-    <div class="components-container1">
-      <label class="requirement-full-name"><span class="requirement-name">Calcio </span>• (gluconato de Ca 10 %)</label>
-      <div class="components-container2">
-        <input class="requirement-input" type="text" inputmode="numeric">
-        <label class="requirement-description">mg/kg/día de<br>gluconato de calcio</label>
-      </div>
-    </div>
+    <h2>Fuerza Honduras/municipalidades</h2>
     <hr>
-    <div id="magnesium-container" class="components-container1">
-      <label class="requirement-full-name" onclick="showConcentrations()"><span class="requirement-name">Magnesio</span> • (sulfato de magnesio)</label>
-      <div class="components-container2">
-        <select class="requirement-input">
-          <option value="10">10 %</option>
-          <option value="20">20 %</option>
-          <option value="30">30 %</option>
-          <option value="40">40 %</option>
-          <option value="50">50 %</option>
-        </select>
-        <input class="requirement-input" type="text" inputmode="numeric">
-        <label class="requirement-description">mg/kg/día de<br>sulfato de magnesio</label>
-      </div>
-    </div>
-    <hr>
-    <div class="components-container1">
-      <label class="requirement-full-name"><span class="requirement-name">Sodio</span> • (cloruro de sodio)</label>
-      <div class="components-container2">
-        <select class="requirement-input">
-          <option value="0-9">0.9 %</option>
-          <option value="3">3 %</option>
-          <option value="5">5 %</option>
-          <option value="7">7 %</option>
-          <option value="10">10 %</option>
-          <option value="11-7">11.7 %</option>
-          <option value="17-7">17.7 %</option>
-          <option value="20">20 %</option>
-          <option value="23-4">23.4 %</option>
-        </select>
-        <input class="requirement-input" type="text" inputmode="numeric">
-        <label class="requirement-description">mEq/kg/día</label>
-      </div>
-    </div>
-    <hr>
-    <div class="components-container1">
-      <label class="requirement-full-name"><span class="requirement-name">Potasio</span> • (cloruro de potasio)</label>
-      <div class="components-container2">
-        <select class="requirement-input">
-          <option value="7-5">7.5 %</option>
-          <option value="10">10 %</option>
-          <option value="11-2">11.2 %</option>
-          <option value="15" selected>15 %</option>
-          <option value="20">20 %</option>
-        </select>
-        <input class="requirement-input" type="text" inputmode="numeric">
-        <label class="requirement-description">mEq/kg/día</label>
-      </div>
-    </div>
-    </section>
-    <section class="other-fluids">
-      <div class="title-bar">
-        <div class="title-bar-bg"></div>
-        <p class="title-bar-text"><b>Otros líquidos</b></p>
-      </div>
-    </section>
-    <section class="mixture">
-      <div class="title-bar">
-        <div class="title-bar-bg"></div>
-        <p class="title-bar-text"><b>Mezcla</b></p>
-      </div>
-    </section>
+    <h3>Comayagua</h3>
+    <p>Municipios con listados actualizados:</p>
+    <ol>
+      <li>Ajuterique</li>
+      <li>Comayagua | ILA</li>
+      <li>Esquias</li>
+      <li>Siguatepeque</li>
+      <li>San José del Potrero</li>
+      <li>San Luis</li>
+    </ol>
+    <p class="last-update">Última actualización: 10/2/22 11:20 H</p>
   </main>
-  <script src="scripts.js"></script>
 </body>
 </html>

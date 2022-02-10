@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  font-size: 16px;
+}
+
+main {
+  margin: 20px;
+}
+
+.top-navigation {
+  overflow: hidden;
+  background-color: #00aeff;
+  position: relative;
+}
+
+h1 {
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+h3 {
+  margin-top: 10px;
+}
+
+.last-update {
+  text-align: end;
+}
